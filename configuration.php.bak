@@ -1,0 +1,16 @@
+<?php
+
+$host = \JUri::getInstance()->getHost();
+
+if ("coffee2.hecto.dsa.tw" == $host)
+{
+    require_once __DIR__ . '/coffee2.php';
+}
+elseif ("vegan2.hecto.dsa.tw" == $host)
+{
+    require_once __DIR__ . '/vegan2.php';
+}
+else
+{
+    die('something error');
+}
